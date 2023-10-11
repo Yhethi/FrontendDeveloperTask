@@ -9,14 +9,14 @@ export const apiContainers = [
   },
   {
     title: "Dental & Vision Expense",
-    value: 680.0,
+    value: 0,
   },
   {
     title: "Health Insurance Expense",
-    value: 3500.0,
+    value: 0,
   },
   {
     title: "Advertising Budget",
-    value: 11652.39,
+    value: 0,
   },
 ];

@@ -23,9 +23,9 @@ function App() {
   }, [dataApiContainers]);
 
   const [options, setOptions] = useState([
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
+    { value: 1, label: "Actual Adspend" },
+    { value: 2, label: "Monthly Ad Spend" },
+    { value: 3, label: "Actual Website Traffic" },
     { value: "+", label: "+" },
   ]);
 
@@ -36,9 +36,7 @@ function App() {
   }, [options]);
 
   const handleChangeSelect = (e) => {
-
     setSelectedOptions(e);
-
   };
 
   const formatOptionLabel = ({ value, label, customAbbreviation }) => (
@@ -76,7 +74,10 @@ function App() {
                   isMulti
                   onChange={(e) => {
                     handleChangeSelect(e);
-                    console.log(e);
+                    item.value = 0;
+                    e.map((item2) => {
+                      item.value = item.value + item2.value;
+                    });
                   }}
                   hideSelectedOptions={false}
                   isClearable={true}
