@@ -1,6 +1,7 @@
 .addRow_container {
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .addRow_container button {
@@ -16,7 +17,7 @@
   font-weight: 700;
 }
 form {
-  padding: 10px 5px;
+  padding: 10px 15px;
   height: 0px;
   transform: rotateX(90deg);
   transition-duration: 0.2s;
@@ -30,6 +31,8 @@ form {
   height: 45px;
   padding: 10px;
   font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.322);
+  border-radius: 5px;
 }
 
 #submit {
